@@ -14,6 +14,7 @@ html
     .card-wrapper
       list-style: none
       .card-container
+        +single-transition(width, 2s)
         min-height: 50vh
         background: #eaeaea
         width: 30vw
@@ -48,8 +49,6 @@ html
               color: #3d3d3d
             &:focus
               outline: none
-              &::-webkit-input-placeholder
-                color:transparent
           .edit-icon
             float: right
             position: relative
@@ -77,6 +76,7 @@ html
             color: #3d3d3d
             line-height: 2
             font-size: 17px
+            display: inline
           textarea
             border: none
             overflow: auto
@@ -114,6 +114,22 @@ html
             -moz-border-radius: 7px 7px 7px 7px
             -webkit-border-radius: 7px 7px 7px 7px
           #create-btn
+            border: none
+            background-color: #6F6AEA
+            height: 40px
+            width: 200px
+            font-size: 14px
+            color: white
+            font-family: 'Montserrat', sans-serif
+            letter-spacing: 2px
+            cursor: pointer
+            -webkit-box-shadow: -4px 7px 42px -4px rgba(0,0,0,0.35)
+            -moz-box-shadow: -4px 7px 42px -4px rgba(0,0,0,0.35)
+            box-shadow: -4px 7px 42px -4px rgba(0,0,0,0.35)
+            border-radius: 7px 7px 7px 7px
+            -moz-border-radius: 7px 7px 7px 7px
+            -webkit-border-radius: 7px 7px 7px 7px
+          .save-note
             border: none
             background-color: #6F6AEA
             height: 40px
