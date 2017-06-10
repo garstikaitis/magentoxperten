@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Note taking application</title>
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <section>
+    <ul class="card-wrapper">
+      <li class="card-container">
+        <div class="card-title">
+          <input class="title-input" type="text" />
+          <span class="edit-icon">DELETE NOTE</span>
+        </div>
+        <div class="card-content">
+          <textarea class="note-input" placeholder="What do you want to note down?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'What do you want to note down?'"></textarea>
+        </div>
+        <div class="card-footer">
+          <button id="create-btn">CREATE NOTE</button>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+</body>

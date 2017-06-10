@@ -1,0 +1,131 @@
+@import "compass"
+
+html
+  text-align: center
+  height: 100%
+  body
+    background-color: #fa6e70
+    @include filter-gradient(#fa6e70, #676af1, horizontal)
+    @include background-image(linear-gradient(left top, #fa6e70 0%,#676af1 100%))
+    height: 100%
+    margin: 0
+    background-repeat: no-repeat
+    background-attachment: fixed
+    .card-wrapper
+      list-style: none
+      .card-container
+        min-height: 50vh
+        background: #eaeaea
+        width: 30vw
+        float: left
+        margin-left: 5%
+        margin-right: 13%
+        -webkit-box-shadow: -4px 7px 42px -4px rgba(0,0,0,0.35)
+        -moz-box-shadow: -4px 7px 42px -4px rgba(0,0,0,0.35)
+        box-shadow: -4px 7px 42px -4px rgba(0,0,0,0.35)
+        border-radius: 7px 7px 7px 7px
+        -moz-border-radius: 7px 7px 7px 7px
+        -webkit-border-radius: 7px 7px 7px 7px
+        border: 0px solid #000000
+        .card-title
+          height: 50px
+          .card-title-text
+            height: 50px
+            line-height: 50px
+            font-family: 'Questrial', sans-serif
+            color: #3d3d3d
+          input[type="text"]
+            padding: 40px
+            border: none
+            transition: border 0.3s
+            text-align: center
+            background-color: #EAEAEA
+            height: 51px
+            font-family: 'Questrial', sans-serif
+            color: #3d3d3d
+            font-size: 20px
+            &:placeholder
+              color: #3d3d3d
+            &:focus
+              outline: none
+              &::-webkit-input-placeholder
+                color:transparent
+          .edit-icon
+            float: right
+            position: relative
+            top: -52px
+            right: 36px
+            color: #BF6CA4
+            cursor: pointer
+            font-family: 'Questrial', sans-serif
+            display: none
+            &:nth-child(-n+1)
+              float: right
+              position: relative
+              top: 52px
+              right: 36px
+              color: #BF6CA4
+              cursor: pointer
+              font-family: 'Questrial', sans-serif
+              display: none
+        .card-content
+          width: 80%
+          margin: auto
+          margin-left: 10%
+          .card-content-text
+            font-family: 'Raleway', sans-serif
+            color: #3d3d3d
+            line-height: 2
+            font-size: 17px
+          textarea
+            border: none
+            overflow: auto
+            outline: none
+            -webkit-box-shadow: none
+            -moz-box-shadow: none
+            box-shadow: none
+            resize: none
+            width: 100%
+            background-color: transparent
+            margin-top: 30px
+            text-align: center
+            font-family: 'Raleway', sans-serif
+            color: #3d3d3d
+            line-height: 2
+            font-size: 17px
+            height: 12vw
+        .card-footer
+          padding-bottom: 50px
+          padding-top: 20px
+          .edit-note
+            border: none
+            background-color: #EC585A
+            height: 40px
+            width: 200px
+            font-size: 14px
+            color: white
+            font-family: 'Montserrat', sans-serif
+            letter-spacing: 2px
+            cursor: pointer
+            -webkit-box-shadow: -4px 7px 42px -4px rgba(0,0,0,0.35)
+            -moz-box-shadow: -4px 7px 42px -4px rgba(0,0,0,0.35)
+            box-shadow: -4px 7px 42px -4px rgba(0,0,0,0.35)
+            border-radius: 7px 7px 7px 7px
+            -moz-border-radius: 7px 7px 7px 7px
+            -webkit-border-radius: 7px 7px 7px 7px
+          #create-btn
+            border: none
+            background-color: #6F6AEA
+            height: 40px
+            width: 200px
+            font-size: 14px
+            color: white
+            font-family: 'Montserrat', sans-serif
+            letter-spacing: 2px
+            cursor: pointer
+            -webkit-box-shadow: -4px 7px 42px -4px rgba(0,0,0,0.35)
+            -moz-box-shadow: -4px 7px 42px -4px rgba(0,0,0,0.35)
+            box-shadow: -4px 7px 42px -4px rgba(0,0,0,0.35)
+            border-radius: 7px 7px 7px 7px
+            -moz-border-radius: 7px 7px 7px 7px
+            -webkit-border-radius: 7px 7px 7px 7px
