@@ -1,9 +1,5 @@
 $(() => {
-  let titleInput = $(".title-input");
-  let noteInput = $(".note-input");
-  let createBtn = $("#create-btn");
   let deleteNote = $('<span class="edit-icon>DELETE NOTE</span>');
-
   let newCardContent = $("<li/>", { class: "card-container" }).append(
     $("<div/>", { class: "card-title" }).append(
       $("<input/>", {
@@ -31,13 +27,13 @@ $(() => {
   );
 
   // 1. Create a note
-  //    1.1 Check if title and content != null - checkCard();
-  //    1.2 If != null save title and content of the card - saveCard();
-  //    1.3 Create a template for a new card next to the saved card. - createTemplate();
+  //    1.1 Check if title and content != null
+  //    1.2 If != null save title and content of the card
+  //    1.3 Create a template for a new card next to the saved card.
   //    1.4 createCard();
   // 2. Edit a note
   //    2.1 Get title and content value of the card and make it editable - $.val();
-  //    2.2 Check if content and title != null - checkCard();
+  //    2.2 Check if content and title != null
   //    2.3 saveCard();
   // 3. Remove card
   //    3.1 removeCard();
@@ -56,7 +52,7 @@ $(() => {
   })
 
   function createCard() {
-    console.log('createCard welcome');
+    console.log('Greetings from createCard()');
     const cardTitle = $(event.target).parent().parent().children().first();
     const title = $(event.target).parent().siblings().first().children().first();
     const titleVal= $(event.target).parent().siblings().first().children().first().val();
@@ -68,9 +64,9 @@ $(() => {
       textarea.replaceWith('<p class="card-content-text">' + textareaVal + '</p>');
       deleteNote.appendTo(cardTitle);
       $('.edit-icon').show();
-      console.log('card created');
+      console.log('Success from createCard()');
     } else {
-      console.log('error from createCard');
+      console.log('Whoops from createCard()');
       return;
     }
 
@@ -84,36 +80,36 @@ $(() => {
   }
 
   function removeCard() {
-    console.log('removeCard welcome');
+    console.log('Greetings from removeCard()');
     const deleteButtonContainer = $(event.target).parent().parent();
     deleteButtonContainer.remove();
-    console.log('card removed')
+    console.log('Success from removeCard()');
   }
 
   function editCard() {
-    console.log('editCard welcome');
+    console.log('Greetings from editCard()');
     const h2 = $(event.target).parent().siblings().first().children().first();
     const span = $(event.target).parent().siblings().first().find('span');
     const h2val = $(event.target).parent().siblings().first().children().first().text();
     const p = $(event.target).parent().siblings().last().children().first();
     const pVal = $(event.target).parent().siblings().last().children().first().text();
-    span.hide()
+    span.hide();
     if(h2val && pVal) {
       h2.replaceWith('<input type="text" placeholder="Enter title of the note" class="title-input" />');
       $(event.target).parent().siblings().first().children().first().attr('value', h2val);
       p.replaceWith('<textarea placeholder="What do you want to note down?" class="note-input"></textarea>');
       $(event.target).parent().siblings().last().children().first().text(pVal);
-      console.log('card edited')
+      console.log('Success from editCard()');
     } else {
-      console.log('error from editCard')
+      console.log('Whoops from editCard()');
       return;
     }
-    $(event.target).attr('class', 'save-note')
-    $(event.target).text('SAVE NOTE')
+    $(event.target).attr('class', 'save-note');
+    $(event.target).text('SAVE NOTE');
   };
 
   function saveCard() {
-    console.log('saveCard welcome');
+    console.log('Greetings from saveCard()');
     const h2 = $(event.target).parent().siblings().first().children().first();
     const h2val = $(event.target).parent().siblings().first().children().first().val();
     const span = $(event.target).parent().siblings().first().find('span');
@@ -124,10 +120,10 @@ $(() => {
       p.replaceWith('<p class="card-content-text">' + pVal + '</p>');
       $(event.target).attr('class', 'edit-note');
       $(event.target).text('EDIT NOTE');
-      span.show()
-      console.log('card saved')
+      span.show();
+      console.log('Success from saveCard()');
     } else {
-      console.log('error from saveCard')
+      console.log('Whoops from saveCard()');
       return;
     }
   };

@@ -1,5 +1,4 @@
 @import "compass"
-
 html
   text-align: center
   height: 100%
@@ -14,7 +13,8 @@ html
     .card-wrapper
       list-style: none
       .card-container
-        +single-transition(width, 2s)
+        @include animation(shake 0.8s infinite linear)
+        @include transform-origin(50% 50%)
         min-height: 50vh
         background: #eaeaea
         width: 30vw

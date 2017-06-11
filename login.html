@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Note taking application</title>
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+  <section>
+    <div class="presentation">
+      <h1 class="hero-title">NOTE APPLICATION</h1>
+      <h2 class="hero-subtitle">You shall never forget</h1>
+    </div>
+    <form class="login-form">
+      <div class="form-header">
+        <h1 class="form-header-text">Login</h1>
+      </div>
+      <div class="form-content">
+        <div class="username-input-container">
+          <span class="username-icon"><i class="ion-ios-person-outline"></i></span>
+          <input class="username-input" placeholder="Enter your username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your username'" />
+        </div>
+        <div class="password-input-container">
+          <span class="password-icon"><i class="ion-ios-locked-outline"></i></span>
+          <input class="password-input" placeholder="Enter your password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your password'" />
+        </div>
+        <div class="button-container">
+          <button class="login-button">LOGIN</button>
+        </div>
+        <div class="forgot-password-container">
+          <span class="forgot-password">forgot password?</span>
+        </div>
+      </div>
+      <div class="bottom-container">
+        <p class="create-account-text">Don't have an account?<span class="click-here"><a href="signup.html"> Click here to sign up!</a></span></p>
+      </div>
+    </form>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/js.cookie.js"></script>
+  <script src="js/login.js"></script>
+</body>
