@@ -28,6 +28,22 @@ html
         -moz-border-radius: 7px 7px 7px 7px
         -webkit-border-radius: 7px 7px 7px 7px
         border: 0px solid #000000
+        animation-name: rotateAnimation
+        -webkit-animation-name: wk-rotateAnimation
+        animation-duration: 1s
+        -webkit-animation-duration: 1s
+        animation-iteration-count: 1
+        -webkit-animation-iteration-count: 1
+        @keyframes rotateAnimation
+          0%
+            opacity: 0
+          100%
+            opacity: 1
+        @-webkit-keyframes wk-rotateAnimation
+          0%
+            -webkit-opacity: 0
+          100%
+            -webkit-opacity: 1
         .card-title
           height: 50px
           .card-title-text

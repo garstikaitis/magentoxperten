@@ -1,4 +1,5 @@
 $(() => {
+  console.log('wassup')
   let deleteNote = $('<span class="edit-icon>DELETE NOTE</span>');
   let newCardContent = $("<li/>", { class: "card-container" }).append(
     $("<div/>", { class: "card-title" }).append(
